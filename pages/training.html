@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transing and certification</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <!-- watch out i have write it again whenever i start vs code in terminal -->
+    <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
+    <!-- organise classes like this 
+     layout-> spacing-> typograpgy-> colors-> effects->others-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class=" bg-[#043873]">
+        <div class="app-container py-4 flex items-center justify-between">
+            <!-- logo -->
+            <a href="../index.html" class="viraj-logo h-auto w-47 max-sm:w-40"><img src="../img/about-viraj-logo.png"
+                    class="h-full w-full" alt="Viraj Technologies company logo"></a>
+            <!-- navigation -->
+            <nav class="viraj-frame flex gap-10">
+                <ul class="nav-menu  hidden xl:flex items-center gap-6 text-white font-medium text-sm">
+                    <li><a href="" class="hover:text-[#4F9CF9] cursor-pointer">Home</a></li>
+                    <li><a href="" class="hover:text-[#4F9CF9] cursor-pointer">About-us</a></li>
+                    <li><a href="" class="hover:text-[#4F9CF9] cursor-pointer">Our Services</a></li>
+                    <li><a href="" class="hover:text-[#4F9CF9] cursor-pointer">Portfolio</a> </li>
+                    <li><a href="" class="hover:text-[#4F9CF9] cursor-pointer">Training & Certification</a></li>
+                </ul>
+                <!-- buttons -->
+                <div class="btns flex gap-4 max-md:hidden">
+                    <a href="#" class="py-3 px-6 rounded-lg border border-white"><span
+                            class="font-medium text-white text-sm">Contact
+                            Us</span></a>
+                    <a href="#" class="bg-white py-3 px-6 rounded-lg flex items-center gap-3">
+                        <span class="text-[#043873] font-medium text-sm">Request Quote</span>
+                        <i class="fa-solid fa-arrow-right text-[#043873] "></i></a>
+                </div>
+            </nav>
+            <!-- open menu -->
+            <button aria-label="Open menu" class="menu-bar sm:hidden p-3 font-normal">
+                <i class="fa-solid fa-bars text-white text-3xl"></i></button>
+        </div>
+    </header>
+    <!-- banner section -->
+    <section class="banner-section relative">
+        <!-- about element-->
+        <div class="absolute z-0 max-sm:hidden top-[25%]">
+            <img src="../img/about-element.png" alt="design element" class="h-full w-full">
+        </div>
+        <div class="container mx-auto max-sm:px-6 sm:p-10 md:p-15 lg:px-10 max-sm:py-10">
+            <div class="grid max-lg:grid-cols-1 lg:grid-cols-2 max-sm:gap-5">
+
+                <div class="banner-content flex flex-col max-md:gap-4 md:gap-5 lg:gap-8 py-3 max-sm:px-0 px-10 py-10">
+                    <span class="flex items-center gap-2">
+                        <p class="text-[#4F9CF9]"><i class="fa-solid fa-briefcase"></i></p>
+                        <p class="text-[#4F9CF9] max-sm:text-sm max-sm:font-bold text-lg font-bold uppercase">Career
+                        </p>
+                    </span>
+                    <h1 class="font-bold max-sm:text-2xl sm:text-3xl md:text-3xl max-sm:leading-7">Opportunities don't
+                        happen, you create them.</h1>
+                    <div class="text-[#6B6B6B] font-semibold text-sm flex flex-col gap-3">
+                        <p>Are you passionate, driven, and ready to make an impact? Join our dynamic team and be part of
+                            a company that values creativity, growth, and innovation.</p>
+
+                    </div>
+                    <!-- Button -->
+                    <button class="text-left  max-sm:text-center pt-5"><span
+                            class="text-white bg-[#4F9CF9] py-3 px-4 rounded-lg">Join Our
+                            Team</span></button>
+                </div>
+                <div class="banner-img rounded-lg overflow-hidden max-w-[500px] h-auto"><img class="h-full w-full"
+                        src="../img/group-people.jpg" alt="Viraj Technologies digital agency team">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Our Popular Courses! -->
+    <section class="popular bg-[#F5F5F5]">
+        <div class="container mx-auto max-sm:px-6 sm:p-10 md:p-15 lg:px-10 max-sm:py-10">
+            <!-- heading -->
+            <div clas="popular-heading flex flex-col gap-5">
+                <h2 class="text-3xl font-bold text-center pb-6">Our Popular Courses!</h2>
+                <p class="text-[#6B6B6B] text-center">Unlock your potential with our most popular courses designed to
+                    equip you with valuable skills for personal and professional growth.</p>
+            </div>
+            <!-- courses -->
+            <div class="grid grid-cols-1 lg:px-7 sm:grid-cols-2 lg:grid-cols-3 mt-[50px] max-md:gap-6 gap-y-8">
+                <div class="react-course bg-white py-10 px-8 w-11/12  rounded-2xl shadow-xl mx-auto ">
+                    <div class="react-content flex flex-col gap-8 lg:gap-6">
+                        <!-- react-logo -->
+                        <div class="logo flex flex-col items-center w-full gap-2">
+                            <div
+                                class="react-logo bg-[#043873] w-full max-w-[120px] h-auto rounded-[50%] p-3 overflow-hidden">
+                                <img src="../img/react-course.png" alt="react course" class="h-full w-full">
+                            </div>
+                            <span class="text-sm font-bold text-center">React</span>
+                        </div>
+
+                        <!-- course-period -->
+                        <div class="course-period w-full flex flex-col gap-2 text-[#212529]">
+                            <ul class="flex justify-between text-sm">
+                                <li>Duration</li>
+                                <li>3 months</li>
+                            </ul>
+                            <ul class="flex justify-between text-md">
+                                <li>Class Time</li>
+                                <li>8 hours</li>
+                            </ul>
+                            <ul class="flex justify-between text-sm">
+                                <li>Class Type</li>
+                                <li>offline</li>
+                            </ul>
+                        </div>
+                        <!-- contac us -->
+                        <div class="course-contact mt-3 flex justify-center w-full">
+                            <span class="py-1 px-2 border border-solid border-black rounded-lg"> <a href=""
+                                    class="text-sm">Contact Us</a></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="react-course bg-white py-10 px-8 w-11/12  rounded-2xl shadow-xl mx-auto ">
+                    <div class="react-content flex flex-col gap-8 lg:gap-6">
+                        <!-- react-logo -->
+                        <div class="logo flex flex-col items-center w-full gap-2">
+                            <div class="react-logo bg-(--primary-color) w-[120px] h-auto rounded-[50%] p-3 overflow-hidden">
+                                <img src="../img/react-course.png" alt="react course" class="h-full w-full">
+                            </div>
+                            <span class="text-sm font-bold text-center">React</span>
+                        </div>
+
+                        <!-- course-period -->
+                        <div class="course-period w-full flex flex-col gap-2 text-[#212529]">
+                            <ul class="flex justify-between text-sm">
+                                <li>Duration</li>
+                                <li>3 months</li>
+                            </ul>
+                            <ul class="flex justify-between text-md">
+                                <li>Class Time</li>
+                                <li>8 hours</li>
+                            </ul>
+                            <ul class="flex justify-between text-sm">
+                                <li>Class Type</li>
+                                <li>offline</li>
+                            </ul>
+                        </div>
+                        <!-- contac us -->
+                        <div class="course-contact mt-3 flex justify-center w-full">
+                            <span class="py-1 px-2 border border-solid border-black rounded-lg"> <a href=""
+                                    class="text-sm">Contact Us</a></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="react-course bg-white py-10 px-8 w-11/12  rounded-2xl shadow-xl mx-auto ">
+                    <div class="react-content flex flex-col gap-8 lg:gap-6">
+                        <!-- react-logo -->
+                        <div class="logo flex flex-col items-center w-full gap-2">
+                            <div class="react-logo bg-[#043873] w-[120px] h-auto rounded-[50%] p-3 overflow-hidden">
+                                <img src="../img/react-course.png" alt="react course" class="h-full w-full">
+                            </div>
+                            <span class="text-sm font-bold text-center">React</span>
+                        </div>
+
+                        <!-- course-period -->
+                        <div class="course-period w-full flex flex-col gap-2 text-[#212529]">
+                            <ul class="flex justify-between text-sm">
+                                <li>Duration</li>
+                                <li>3 months</li>
+                            </ul>
+                            <ul class="flex justify-between text-md">
+                                <li>Class Time</li>
+                                <li>8 hours</li>
+                            </ul>
+                            <ul class="flex justify-between text-sm">
+                                <li>Class Type</li>
+                                <li>offline</li>
+                            </ul>
+                        </div>
+                        <!-- contac us -->
+                        <div class="course-contact mt-3 flex justify-center w-full">
+                            <span class="py-1 px-2 border border-solid border-black rounded-lg"> <a href=""
+                                    class="text-sm">Contact Us</a></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="react-course bg-white py-10 px-8 w-11/12  rounded-2xl shadow-xl mx-auto ">
+                    <div class="react-content flex flex-col gap-8 lg:gap-6">
+                        <!-- react-logo -->
+                        <div class="logo flex flex-col items-center w-full gap-2">
+                            <div class="react-logo bg-[#043873] w-[120px] h-auto rounded-[50%] p-3 overflow-hidden">
+                                <img src="../img/react-course.png" alt="react course" class="h-full w-full">
+                            </div>
+                            <span class="text-sm font-bold text-center">React</span>
+                        </div>
+
+                        <!-- course-period -->
+                        <div class="course-period w-full flex flex-col gap-2 text-[#212529]">
+                            <ul class="flex justify-between text-sm">
+                                <li>Duration</li>
+                                <li>3 months</li>
+                            </ul>
+                            <ul class="flex justify-between text-md">
+                                <li>Class Time</li>
+                                <li>8 hours</li>
+                            </ul>
+                            <ul class="flex justify-between text-sm">
+                                <li>Class Type</li>
+                                <li>offline</li>
+                            </ul>
+                        </div>
+                        <!-- contac us -->
+                        <div class="course-contact mt-3 flex justify-center w-full">
+                            <span class="py-1 px-2 border border-solid border-black rounded-lg"> <a href=""
+                                    class="text-sm">Contact Us</a></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="react-course bg-white py-10 px-8 w-11/12  rounded-2xl shadow-xl mx-auto ">
+                    <div class="react-content flex flex-col gap-8 lg:gap-6">
+                        <!-- react-logo -->
+                        <div class="logo flex flex-col items-center w-full gap-2">
+                            <div class="react-logo bg-[#043873] w-[120px] h-auto rounded-[50%] p-3 overflow-hidden">
+                                <img src="../img/react-course.png" alt="react course" class="h-full w-full">
+                            </div>
+                            <span class="text-sm font-bold text-center">React</span>
+                        </div>
+
+                        <!-- course-period -->
+                        <div class="course-period w-full flex flex-col gap-2 text-[#212529]">
+                            <ul class="flex justify-between text-sm">
+                                <li>Duration</li>
+                                <li>3 months</li>
+                            </ul>
+                            <ul class="flex justify-between text-md">
+                                <li>Class Time</li>
+                                <li>8 hours</li>
+                            </ul>
+                            <ul class="flex justify-between text-sm">
+                                <li>Class Type</li>
+                                <li>offline</li>
+                            </ul>
+                        </div>
+                        <!-- contac us -->
+                        <div class="course-contact mt-3 flex justify-center w-full">
+                            <span class="py-1 px-2 border border-solid border-black rounded-lg"> <a href=""
+                                    class="text-sm">Contact Us</a></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="react-course bg-white py-10 px-8 w-11/12  rounded-2xl shadow-xl mx-auto ">
+                    <div class="react-content flex flex-col gap-8 lg:gap-6">
+                        <!-- react-logo -->
+                        <div class="logo flex flex-col items-center w-full gap-2">
+                            <div class="react-logo bg-[#043873] w-[120px] h-auto rounded-[50%] p-3 overflow-hidden">
+                                <img src="../img/react-course.png" alt="react course" class="h-full w-full">
+                            </div>
+                            <span class="text-sm font-bold text-center">React</span>
+                        </div>
+
+                        <!-- course-period -->
+                        <div class="course-period w-full flex flex-col gap-2 text-[#212529]">
+                            <ul class="flex justify-between text-sm">
+                                <li>Duration</li>
+                                <li>3 months</li>
+                            </ul>
+                            <ul class="flex justify-between text-md">
+                                <li>Class Time</li>
+                                <li>8 hours</li>
+                            </ul>
+                            <ul class="flex justify-between text-sm">
+                                <li>Class Type</li>
+                                <li>offline</li>
+                            </ul>
+                        </div>
+                        <!-- contac us -->
+                        <div class="course-contact mt-3 flex justify-center w-full">
+                            <span class="py-1 px-2 border border-solid border-black rounded-lg"> <a href=""
+                                    class="text-sm">Contact Us</a></span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer ">
+        <div class="container mx-auto  max-sm:px-5 max-sm:py-10 px-20 pt-20">
+            <!-- footer heading -->
+            <div class="footer-heading flex justify-between">
+                <!-- icons -->
+                <div class="footer h-12 w-47"><img src="../img/viraj-logo.png" alt="Viraj Technologies company logo"
+                        class="h-full w-full">
+
+                </div>
+                <!-- icons -->
+                <div class="flex items-center gap-3">
+                    <a href="#"
+                        class="w-9 h-9 max-sm:w-7 max-sm:h-7 flex items-center justify-center rounded-full bg-blue-600 text-white">
+                        <img src="../img/logos_facebook.png" alt="facebook of viraj" class="h-full w-full">
+                    </a>
+
+                    <a href="#"
+                        class="w-9 h-9 max-sm:w-7 max-sm:h-7 flex items-center justify-center rounded-full bg-sky-500 text-white">
+                        <img src="../img/skill-icons_twitter.png" alt="facebook of viraj" class="h-full w-full">
+                    </a>
+
+                    <a href="#"
+                        class="w-9 h-9  max-sm:w-7 max-sm:h-7 flex items-center justify-center rounded-full  text-white">
+                        <img src="../img/skill-icons_instagram.png" alt="facebook of viraj" class="h-full w-full">
+                    </a>
+
+                    <a href="#"
+                        class="w-9 h-9  max-sm:w-7 max-sm:h-7 flex items-center justify-center rounded-full  text-white">
+                        <img src="../img/devicon_linkedin.png" alt="facebook of viraj" class="h-full w-full">
+                    </a>
+                </div>
+
+
+            </div>
+            <!-- footer links and information -->
+            <div class="footer-links grid max-md:grid-cols-1 md:grid-cols-2 py-6">
+                <div class="footer-address py-5 ">
+                    <p class="text-lg font-bold pb-5">Contact Info</p>
+                    <ul class="flex flex-col text-[#333333] text-sm font-semibold gap-4">
+                        <li class="flex items-center gap-2"><i class="fa-regular fa-address-card"></i><a href=""
+                                class="leading-5">Maa Rewa nagar, near Municipal Water tank, Karmeta <br>Jabalpur,
+                                Madhya Pradesh 482001</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-phone"></i><a href="">+91 787 939
+                                7050</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-brands fa-whatsapp"></i><a href="">+91 787 939
+                                7050</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-regular fa-envelope"></i><a
+                                href="">info@virajsofttechsolutions.com</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="footer-text py-5 grid grid-cols-2 justify-items-end max-sm:justify-items-start max-sm:gap-5">
+                    <div class="services ">
+                        <p class="text-lg font-bold pb-5">Services</p>
+                        <ul class="flex flex-col  text-[#333333] text-sm font-semibold gap-4">
+                            <li class="flex items-center gap-2"><a href="" class="leading-5">Hire Graphic Designer</a>
+                            </li>
+                            <li class="flex items-center gap-2"><a href="">Web App Development</a></li>
+                            <li class="flex items-center gap-2"><a href="">Mobile App Development</a></li>
+                            <li class="flex items-center gap-2"><a href="">Search Engine Optimization</a></li>
+                            <li class="flex items-center gap-2"><a href="">Social Media Marketing</a></li>
+                            <li class="flex items-center gap-2"><a href="">Pay-Per-Click</a></li>
+                        </ul>
+                    </div>
+                    <div class="Useful_Links ">
+                        <p class="text-lg font-bold pb-5">Useful Links </p>
+                        <ul class="flex flex-col  text-[#333333] text-sm font-semibold gap-4">
+
+                            <li class="flex items-center gap-2"><a href="">About</a></li>
+                            <li class="flex items-center gap-2"><a href="">Contact</a></li>
+                            <li class="flex items-center gap-2"><a href="">Portfolio</a></li>
+                            <li class="flex items-center gap-2"><a href="">Social Media Marketing</a></li>
+                            <li class="flex items-center gap-2"><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <hr class="text-gray-300 ">
+        <p class="font-medium text-[#333333] text-sm py-6 text-center">Copyright © 2024 Viraj SoftTech Solution. All
+            rights reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>
